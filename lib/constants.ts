@@ -17,12 +17,14 @@ export const REPERTOIRE_HIGHLIGHTS: Song[] = [
   { title: "MERCEDES BENZ", artist: "Janis Joplin" },
   { title: "VALERIE", artist: "Amy Winehouse" },
   { title: "SEVEN NATION ARMY", artist: "The White Stripes" },
-  { title: "WHOLE LOTTA LOVE", artist: "Led Zeppelin" },
+  { title: "WHOLE LOTTA LOVE / ROck n Roll", artist: "Led Zeppelin" },
   { title: "FEELING GOOD", artist: "Nina Simone" },
   { title: "ARE YOU GONNA BE MY GIRL", artist: "Jet" },
   { title: "HIT THE ROAD JACK", artist: "Ray Charles" },
   { title: "BEAT IT", artist: "Michael Jackson" },
   { title: "ANDO MEIO DESLIGADO", artist: "Mutantes" },
+  { title: "PRO DIA NASCER FELIZ", artist: "Barão Vermelho" },
+  { title: "Mania de Você", artist: "Rita Lee" },
 ];
 
 export const VIDEO_LINKS: VideoLink[] = [
@@ -35,12 +37,12 @@ export const VIDEO_LINKS: VideoLink[] = [
 ];
 
 export const PRESENTATIONS: Presentation[] = [
-  { day: "12", month: "ABR", year: "2025", venue: "CERVEJARIA ZIEGE ZAG", location: "Rio de Janeiro, RJ", time: "20:00" },
-  { day: "19", month: "ABR", year: "2025", venue: "MACACO CAOLHO ROCK PUB", location: "Rio de Janeiro, RJ", time: "21:30" },
-  { day: "26", month: "ABR", year: "2025", venue: "COORDENADAS BAR", location: "Botafogo, RJ", time: "22:00" },
-  { day: "03", month: "MAI", year: "2025", venue: "TRITON PORTOBELLO", location: "Mangaratiba, RJ", time: "19:00" },
-  { day: "10", month: "MAI", year: "2025", venue: "ZZ FEST - FESTIVAL DA PRIMAVERA", location: "Rio de Janeiro, RJ", time: "16:00" },
-  { day: "17", month: "MAI", year: "2025", venue: "CASA HORTO - P'ALMA SESSIONS", location: "Jardim Botânico, RJ", time: "18:00" },
+  { day: "28", month: "MAI", year: "2026", venue: "EVENTO PRIVADO", location: "Rio de Janeiro, RJ", time: "20:00" },
+  { day: "30", month: "MAI", year: "2026", venue: "REMEMBEER", location: "Rio de Janeiro, RJ", time: "21:30" },
+  { day: "06", month: "JUN", year: "2026", venue: "TRIP DO VINHO", location: "Vargem Grande, RJ", time: "21:00" },
+  { day: "20", month: "JUN", year: "2026", venue: "LEGION BIKERS", location: "Vargem Pequena, RJ", time: "19:00" },
+  { day: "27", month: "JUN", year: "2026", venue: "MACACO CAOLHO", location: "Botafogo, RJ", time: "21:30" },
+  { day: "11", month: "JUL", year: "2026", venue: "BROOKS", location: "Méier, RJ", time: "21:00" },
 
 ];
 
