@@ -20,15 +20,18 @@ const Presentations: React.FC<PresentationsProps> = ({ schedule }) => {
           </h2>
         </div>
 
-        <div className="space-y-6 overflow-y-auto pr-2 custom-scrollbar max-h-[600px]">
+        <div className="space-y-6 overflow-y-auto py-6 pr-3 custom-scrollbar max-h-[600px]">
           {schedule.map((gig, idx) => (
-            <div key={idx} className="flex group bg-white/5 hover:bg-white/10 transition-colors rounded-lg p-4 border border-white/5 hover:border-white/20">
+            <div 
+              key={idx} 
+              className="flex group bg-white/5 hover:bg-white/10 rounded-lg p-4 border border-white/5 hover:border-blue-500/30 transition-all duration-300 transform hover:translate-x-1 shadow-lg hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)]"
+            >
               {/* Date Box */}
-              <div className="flex flex-col items-center justify-center min-w-[5rem] border-r border-white/10 pr-4 mr-4 text-center">
-                <span className="text-3xl md:text-4xl font-black text-white group-hover:text-blue-300 transition-colors leading-none">
+              <div className="flex flex-col items-center justify-center min-w-[5rem] border-r border-white/10 pr-4 mr-4 text-center group-hover:border-blue-500/30 transition-colors duration-300">
+                <span className="text-3xl md:text-4xl font-black text-white group-hover:text-blue-300 transition-colors duration-300 leading-none">
                   {gig.day}
                 </span>
-                <span className="text-sm md:text-base uppercase font-bold tracking-widest text-blue-400 mt-1">
+                <span className="text-sm md:text-base uppercase font-bold tracking-widest text-blue-400 group-hover:text-blue-300 transition-colors duration-300 mt-1">
                   {gig.month}
                 </span>
                 <span className="text-[10px] text-gray-500 mt-1">{gig.year}</span>
@@ -36,16 +39,16 @@ const Presentations: React.FC<PresentationsProps> = ({ schedule }) => {
 
               {/* Info */}
               <div className="flex flex-col justify-center flex-grow">
-                <h3 className="text-lg md:text-xl font-bold uppercase tracking-wide text-gray-100 mb-2">
+                <h3 className="text-lg md:text-xl font-bold uppercase tracking-wide text-gray-100 mb-2 group-hover:text-white transition-colors duration-300">
                   {gig.venue}
                 </h3>
                 <div className="flex flex-wrap gap-4 text-sm text-gray-400 font-medium">
-                  <div className="flex items-center gap-1">
-                    <MapPin size={14} className="text-blue-500" />
+                  <div className="flex items-center gap-1 transition-colors duration-300 group-hover:text-gray-300">
+                    <MapPin size={14} className="text-blue-500 group-hover:text-blue-400 transition-colors duration-300" />
                     {gig.location}
                   </div>
-                  <div className="flex items-center gap-1">
-                    <Clock size={14} className="text-blue-500" />
+                  <div className="flex items-center gap-1 transition-colors duration-300 group-hover:text-gray-300">
+                    <Clock size={14} className="text-blue-500 group-hover:text-blue-400 transition-colors duration-300" />
                     {gig.time}
                   </div>
                 </div>

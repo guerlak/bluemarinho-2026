@@ -99,7 +99,7 @@ const Navbar: React.FC = () => {
             href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#25D366] hover:bg-[#128C7E] text-white px-5 py-2 rounded-full text-sm font-bold uppercase tracking-wider flex items-center gap-2 transition-all transform hover:scale-105 shadow-lg"
+            className="bg-transparent hover:bg-[#25D366]/10 border border-[#25D366]/50 text-[#25D366] px-5 py-2 rounded-full text-sm font-bold uppercase tracking-wider flex items-center gap-2 transition-all transform hover:scale-105 shadow-md hover:shadow-[0_0_15px_rgba(37,211,102,0.15)]"
           >
             <MessageCircle size={18} />
             Contrate Agora
@@ -139,7 +139,7 @@ const Navbar: React.FC = () => {
             href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#25D366] text-white py-3 rounded-full text-center text-lg font-bold uppercase tracking-widest flex items-center justify-center gap-2 mt-4"
+            className="bg-transparent border border-[#25D366]/50 text-[#25D366] py-3 rounded-full text-center text-lg font-bold uppercase tracking-widest flex items-center justify-center gap-2 mt-4 transition-all hover:bg-[#25D366]/10"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             <MessageCircle size={20} />
