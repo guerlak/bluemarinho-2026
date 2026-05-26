@@ -31,7 +31,7 @@ const Repertoire: React.FC = () => {
       >
         <div className="absolute inset-0 bg-blue-marinho/80"></div>
         <div className="container mx-auto px-4 relative z-10 text-center">
-          <h3 className="text-2xl md:text-4xl font-black uppercase leading-snug tracking-wider max-w-4xl mx-auto drop-shadow-lg">
+          <h3 className="text-2xl md:text-4xl uppercase leading-snug tracking-wider max-w-4xl mx-auto drop-shadow-lg">
             Versões potentes com personalidade para clássicos
             atemporais
           </h3>
