@@ -27,17 +27,17 @@ const About: React.FC = () => {
           <div className="lg:w-1/2 p-8 md:p-16 flex flex-col justify-center border-t lg:border-t-0 lg:border-l border-white/20 relative">
             <div className="mb-12">
               <h3 className="text-2xl md:text-3xl font-bold uppercase tracking-wide leading-tight mb-6 text-gray-100">
-                A energia do Rock e Blues<br />
-                <span className="text-gray-400">em versões únicas</span>
+                O som que corre<br />
+                <span className="text-blue-300 drop-shadow-[0_0_10px_rgba(147,197,253,0.15)]">nas nossas veias</span>
               </h3>
             </div>
 
             <div className="space-y-8 text-lg font-light text-gray-300 leading-relaxed">
               <p>
-                A Blue Marinho é formada por cinco amigos unidos por um amor profundo pelos clássicos do rock e blues de todas as épocas.
+                A <strong className="text-white font-semibold">Blue Marinho</strong> nasceu da paixão visceral pelo rock & blues, transformando a sinergia de cinco amigos de longa data em uma performance potente, elétrica e carregada de feeling.
               </p>
               <p>
-                A marca registrada da banda são suas versões carregadas de energia e personalidade, que refletem tanto o respeito pela obra original quanto a ousadia de reinventar canções conhecidas e amadas por todos.
+                Resgatamos os clássicos definitivos que moldaram gerações — do peso do Led Zeppelin ao groove contagiante de Stevie Wonder, da psicodelia dos Mutantes ao blues imortal de Janis Joplin.
               </p>
             </div>
           </div>

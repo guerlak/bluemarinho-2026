@@ -15,8 +15,11 @@ const Presentations: React.FC<PresentationsProps> = ({ schedule }) => {
       <div className="md:w-1/2 bg-blue-marinho/95 p-6 md:p-12 lg:p-16 flex flex-col relative">
 
         <div className="mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-wider border-l-4 border-blue-500 pl-6 inline-block text-white">
-            Agenda <span className="block text-2xl md:text-3xl text-gray-400 font-light mt-1">Próximas Apresentações</span>
+          <h2 className="text-4xl md:text-5xl font-black uppercase tracking-wider border-l-4 border-blue-500 pl-6 inline-block text-white">
+            Na Estrada 
+            <span className="block text-xs md:text-sm text-blue-400 font-bold uppercase tracking-[0.25em] mt-3 font-sans">
+              Próximos Shows
+            </span>
           </h2>
         </div>
 

@@ -7,22 +7,16 @@ const Repertoire: React.FC = () => {
       {/* Part 1: Intro */}
       <section className="py-20 bg-blue-marinho flex flex-col lg:flex-row">
         <div className="lg:w-1/2 p-8 lg:p-20 flex items-center justify-center lg:justify-end">
-          <h2 className="text-6xl md:text-8xl font-sans font-black  outline-text uppercase tracking-wider opacity-40 lg:opacity-100">
-            Repertório
+          <h2 className="text-6xl md:text-8xl font-sans font-black outline-text uppercase tracking-wider opacity-40 lg:opacity-100 text-white">
+            Setlist
           </h2>
         </div>
         <div className="lg:w-1/2 p-8 lg:p-20 flex flex-col justify-center bg-white/5 backdrop-blur-sm">
-          <p className="text-xl md:text-2xl mb-8 font-light leading-relaxed">
-            A Blue Marinho navega por um vasto oceano musical, trazendo o melhor
-            de diferentes épocas e estilos com repertório diversificado e
-            potente.
+          <p className="text-xl md:text-2xl mb-8 font-light leading-relaxed text-gray-100">
+            Do peso da distorção ao feeling das baladas clássicas. Nosso setlist é uma viagem sem escalas pelas maiores pedradas do rock e blues de todos os tempos.
           </p>
           <p className="text-gray-300 leading-relaxed">
-            De <strong>White Stripes</strong> aos <strong>Beatles</strong>, dos{" "}
-            <strong>Mutantes</strong> à <strong>Nina Simone</strong>, dos
-            clássicos ao contemporâneo. O repertório passa por Led Zeppelin,
-            Stevie Wonder, Guns N' Roses, Jet, The Animals, Cazuza, Janis Joplin
-            e muito mais.
+            Não tocamos apenas as notas; tocamos a atitude. De <strong className="text-white">The White Stripes</strong> a <strong className="text-white">The Beatles</strong>, de <strong className="text-white">Mutantes</strong> a <strong className="text-white">Rita Lee</strong>, passando pelo peso lendário de Led Zeppelin, Stevie Wonder, Janis Joplin, Amy Winehouse e muito mais. Prepare-se para sentir a vibração das guitarras do primeiro ao último acorde.
           </p>
         </div>
       </section>

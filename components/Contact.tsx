@@ -29,7 +29,12 @@ const Contact: React.FC = () => {
                     </div>
 
                     <div className="relative z-10">
-                        <h2 className="text-4xl font-bold mb-12">Shows e<br />Redes Sociais</h2>
+                        <h2 className="text-4xl font-black uppercase mb-12 text-white">
+                          Traga a Banda
+                          <span className="block text-xs md:text-sm text-blue-400 font-bold uppercase tracking-[0.2em] mt-3 font-sans">
+                            Booking & Contato Direto
+                          </span>
+                        </h2>
 
                         <div className="space-y-8 mb-16">
                             <div className="flex items-center gap-4">

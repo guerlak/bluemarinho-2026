@@ -57,9 +57,9 @@ const Navbar: React.FC = () => {
   const navLinks = [
     { name: "A Banda", href: "#about" },
     { name: "Integrantes", href: "#members" },
-    { name: "Repertório", href: "#repertoire" },
-    { name: "Audiovisual", href: "#audiovisual" },
-    { name: "Agenda", href: "#gigs" },
+    { name: "Setlist", href: "#repertoire" },
+    { name: "Ao Vivo", href: "#audiovisual" },
+    { name: "Shows", href: "#gigs" },
   ];
 
   const whatsappLink = `https://wa.me/55${CONTACT_INFO.phone.replace(/\D/g, '')}`;
