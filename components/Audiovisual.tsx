@@ -22,7 +22,7 @@ const Audiovisual: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {VIDEO_LINKS.map((video, index) => (
-            <div key={index} className="flex items-center space-x-6 group cursor-pointer hover:bg-white/5 p-4 rounded-lg transition-all">
+            <a href={video.url} target="_blank" key={index} className="flex items-center space-x-6 group cursor-pointer hover:bg-white/5 p-4 rounded-lg transition-all">
               {/* Play Button Circle */}
               <div className="shrink-0 w-16 h-16 md:w-20 md:h-20 rounded-full bg-white text-blue-marinho flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
                 <Play fill="currentColor" size={32} className="ml-1" color='black' />
@@ -35,7 +35,7 @@ const Audiovisual: React.FC = () => {
                 </h3>
                 <p className="text-gray-400 text-sm md:text-base mt-1">{video.artist}</p>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>
