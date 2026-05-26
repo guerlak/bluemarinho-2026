@@ -42,7 +42,7 @@ export const PRESENTATIONS: Presentation[] = [
   { day: "06", month: "JUN", year: "2026", venue: "TRIP DO VINHO", location: "Vargem Grande, RJ", time: "21:00" },
   { day: "20", month: "JUN", year: "2026", venue: "LEGION BIKERS", location: "Vargem Pequena, RJ", time: "19:00" },
   { day: "27", month: "JUN", year: "2026", venue: "MACACO CAOLHO", location: "Botafogo, RJ", time: "21:30" },
-  { day: "11", month: "JUL", year: "2026", venue: "BROOKS", location: "Méier, RJ", time: "21:00" },
+  { day: "11", month: "JUL", year: "2026", venue: "BROOKS PUB", location: "Méier, RJ", time: "21:00" },
 
 ];
 
