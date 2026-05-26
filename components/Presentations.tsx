@@ -56,7 +56,7 @@ const Presentations: React.FC<PresentationsProps> = ({ schedule }) => {
       </div>
 
       {/* Right Image */}
-      <div className="md:w-1/2 relative min-h-[400px] bg-gray-900">
+      <div className="hidden md:block md:w-1/2 relative min-h-[400px] bg-gray-900">
         <div className="absolute inset-0 bg-blue-marinho/30 z-10 mix-blend-multiply"></div>
         <div className="absolute inset-0 bg-linear-to-t from-blue-marinho to-transparent z-20 opacity-60">
           <Image src={fotoShow} fill alt='Banda performando' />
