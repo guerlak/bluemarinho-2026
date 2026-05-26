@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 items-center justify-center w-full px-4">
+        {/* <div className="flex flex-col sm:flex-row gap-4 items-center justify-center w-full px-4">
           <a
             href="#gigs"
             className="flex items-center justify-center gap-2 w-full sm:w-auto bg-transparent border-2 border-blue-300/40 hover:border-blue-300 text-blue-300 hover:text-white px-8 py-3.5 rounded-full font-bold uppercase tracking-widest text-sm transition-all duration-300 transform hover:scale-105 hover:bg-blue-300/5 shadow-md hover:shadow-[0_0_20px_rgba(147,197,253,0.2)]"
@@ -54,7 +54,7 @@ const Hero: React.FC = () => {
             <MessageCircle size={18} />
             Contratar Banda
           </a>
-        </div>
+        </div> */}
       </div>
 
       {/* Decorative Interactive Scroll Indicator */}

@@ -28,12 +28,12 @@ export const REPERTOIRE_HIGHLIGHTS: Song[] = [
 ];
 
 export const VIDEO_LINKS: VideoLink[] = [
+    { title: "THE HOUSE OF THE RISING SUN", artist: "The Animals", thumbnail: "https://picsum.photos/id/234/600/400", url: "https://www.youtube.com/watch?v=C2BnMJiFxn0" },
+  { title: "STAY", artist: "Oingo Boingo", thumbnail: "https://picsum.photos/id/193/600/400", url: "https://www.youtube.com/watch?v=fYJDAFVodxk" },
+
   { title: "COME TOGETHER", artist: "The Beatles", thumbnail: "https://picsum.photos/id/145/600/400", url: "https://www.youtube.com/watch?v=kd57l2z8Pz8" },
   { title: "FEELING GOOD", artist: "Nina Simone", thumbnail: "https://picsum.photos/id/158/600/400", url: "https://www.youtube.com/watch?v=N-HWNH7DKWs" },
-  { title: "STAY", artist: "Oingo Boingo", thumbnail: "https://picsum.photos/id/193/600/400", url: "https://www.youtube.com/watch?v=fYJDAFVodxk" },
-  { title: "THE HOUSE OF THE RISING SUN", artist: "The Animals", thumbnail: "https://picsum.photos/id/234/600/400", url: "https://www.youtube.com/watch?v=C2BnMJiFxn0" },
   { title: "SUPERSTITION", artist: "Stevie Wonder", thumbnail: "https://picsum.photos/id/252/600/400", url: "https://www.youtube.com/watch?v=7CZE-nETrN8" },
-  
 ];
 
 export const PRESENTATIONS: Presentation[] = [
