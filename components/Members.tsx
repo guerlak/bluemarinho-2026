@@ -8,7 +8,7 @@ const Members: React.FC = () => {
       <div className="absolute inset-0 opacity-5" style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/cubes.png")' }}></div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <h2 className="text-5xl md:text-7xl font-black text-center uppercase tracking-tighter mb-20 font-sans text-white">
+        <h2 className="text-5xl md:text-7xl font-serif font-bold text-center uppercase mb-20 text-white">
           No Palco
           <span className="block text-xs md:text-sm text-blue-400 font-bold uppercase tracking-[0.3em] mt-3 font-sans">
             A Linha de Frente do Nosso Som

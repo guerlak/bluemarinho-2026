@@ -18,7 +18,7 @@ const About: React.FC = () => {
             />
             <div className="absolute top-8 left-8 z-10">
               <h2 className="text-4xl md:text-6xl font-serif font-bold uppercase leading-none">
-                A Blue<br />Marinho
+                Blue<br />Marinho
               </h2>
             </div>
           </div>

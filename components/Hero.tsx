@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, MessageCircle } from 'lucide-react';
+import { ArrowDown, ArrowRight, MessageCircle } from 'lucide-react';
 import { CONTACT_INFO } from '../lib/constants';
 
 const Hero: React.FC = () => {
@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
       <div className="relative z-10 text-center px-4 max-w-4xl flex flex-col items-center">
         {/* Subtle glowing label */}
         <span className="text-xs md:text-sm uppercase tracking-[0.3em] font-bold text-blue-400 mb-6 bg-blue-500/10 px-4 py-1.5 rounded-full border border-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.15)] animate-pulse">
-          Classic Rock & Blues Sessions
+          Rock Sessions
         </span>
 
         {/* Heavy Bold Headline */}
@@ -43,7 +43,7 @@ const Hero: React.FC = () => {
             className="flex items-center justify-center gap-2 w-full sm:w-auto bg-transparent border-2 border-blue-300/40 hover:border-blue-300 text-blue-300 hover:text-white px-8 py-3.5 rounded-full font-bold uppercase tracking-widest text-sm transition-all duration-300 transform hover:scale-105 hover:bg-blue-300/5 shadow-md hover:shadow-[0_0_20px_rgba(147,197,253,0.2)]"
           >
             Ver Próximos Shows
-            <ArrowRight size={16} />
+            <ArrowDown size={16} />
           </a>
           <a
             href={whatsappLink}

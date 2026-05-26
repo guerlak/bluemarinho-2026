@@ -12,11 +12,11 @@ const Audiovisual: React.FC = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-7xl font-black uppercase mb-4 text-white">
+          <h2 className="text-5xl md:text-7xl font-serif font-bold uppercase mb-4 text-white">
             Ao Vivo
           </h2>
           <p className="text-xs md:text-sm text-blue-400 font-bold uppercase tracking-[0.3em] mt-3 font-sans">
-            Sinta a Vibração dos Nossos Registros
+            Nossa essência capturada em tempo real
           </p>
         </div>
 

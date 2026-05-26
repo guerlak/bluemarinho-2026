@@ -16,7 +16,7 @@ const Presentations: React.FC<PresentationsProps> = ({ schedule }) => {
 
         <div className="mb-12">
           <h2 className="text-4xl md:text-5xl font-black uppercase tracking-wider border-l-4 border-blue-500 pl-6 inline-block text-white">
-            Na Estrada 
+            Na Estrada
             <span className="block text-xs md:text-sm text-blue-400 font-bold uppercase tracking-[0.25em] mt-3 font-sans">
               Próximos Shows
             </span>
@@ -25,8 +25,8 @@ const Presentations: React.FC<PresentationsProps> = ({ schedule }) => {
 
         <div className="space-y-6 overflow-y-auto py-6 pr-3 custom-scrollbar max-h-[600px]">
           {schedule.map((gig, idx) => (
-            <div 
-              key={idx} 
+            <div
+              key={idx}
               className="flex group bg-white/5 hover:bg-white/10 rounded-lg p-4 border border-white/5 hover:border-blue-500/30 transition-all duration-300 transform hover:translate-x-1 shadow-lg hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)]"
             >
               {/* Date Box */}
@@ -62,14 +62,20 @@ const Presentations: React.FC<PresentationsProps> = ({ schedule }) => {
       </div>
 
       {/* Right Image */}
-      <div className="hidden md:block md:w-1/2 relative min-h-[400px] bg-gray-900">
-        <div className="absolute inset-0 bg-blue-marinho/30 z-10 mix-blend-multiply"></div>
-        <div className="absolute inset-0 bg-linear-to-t from-blue-marinho to-transparent z-20 opacity-60">
-          <Image src={fotoShow} fill alt='Banda performando' />
-        </div>
+      <div className="hidden md:block md:w-1/2 relative min-h-[400px] bg-gray-900 overflow-hidden group/image">
+        <Image
+          src={fotoShow}
+          fill
+          priority
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="object-cover object-center transition-transform duration-700 ease-out group-hover/image:scale-105"
+          alt='Integrantes da Blue Marinho em foto com o publico atrás'
+        />
+        <div className="absolute inset-0 bg-blue-marinho/40 z-10 mix-blend-multiply transition-opacity duration-500 group-hover/image:opacity-85"></div>
+        <div className="absolute inset-0 bg-linear-to-t from-blue-marinho via-blue-marinho/40 to-transparent z-20 opacity-70"></div>
 
-        <div className="absolute bottom-12 left-12 z-30 max-w-md">
-          <p className="text-white/80 text-lg italic font-light border-l-2 border-blue-500 pl-4">
+        <div className="absolute bottom-12 left-12 z-30 max-w-md transform transition-transform duration-500 group-hover/image:translate-x-1">
+          <p className="text-white/90 text-lg italic font-light border-l-2 border-blue-500 pl-4 drop-shadow-md">
             "A marca registrada da banda são suas versões carregadas de energia e personalidade."
           </p>
         </div>
