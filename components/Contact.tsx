@@ -30,10 +30,10 @@ const Contact: React.FC = () => {
 
                     <div className="relative z-10">
                         <h2 className="text-4xl font-black uppercase mb-12 text-white">
-                          Traga a Banda
-                          <span className="block text-xs md:text-sm text-blue-400 font-bold uppercase tracking-[0.2em] mt-3 font-sans">
-                            Booking & Contato Direto
-                          </span>
+                            A Blue no seu evento
+                            <span className="block text-xs md:text-sm text-blue-400 font-bold uppercase tracking-[0.2em] mt-3 font-sans">
+                                Booking & Contato Direto
+                            </span>
                         </h2>
 
                         <div className="space-y-8 mb-16">
@@ -59,7 +59,7 @@ const Contact: React.FC = () => {
                                 <span className="text-lg">{CONTACT_INFO.youtube}</span>
                             </a>
 
-                            
+
                         </div>
 
                         <p className="text-xs text-gray-600 mt-auto">
