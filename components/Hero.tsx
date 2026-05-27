@@ -7,10 +7,10 @@ const Hero: React.FC = () => {
   const whatsappLink = `https://wa.me/55${CONTACT_INFO.phone.replace(/\D/g, '')}`;
 
   return (
-    <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+    <section className="relative h-[70vh] md:h-screen sm:h-screen w-full flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div
-        className="absolute inset-0 bg-cover bg-center z-0"
+        className="absolute inset-0 bg-size-[130%_auto] md:bg-cover bg-center bg-no-repeat z-0 translate-y-0 md:translate-y-0"
         style={{ backgroundImage: `url(${fotoHero.src})` }}
       >
         <div className="absolute inset-0 bg-blue-marinho/50 mix-blend-multiply"></div>
@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-4xl flex flex-col items-center translate-y-8 md:translate-y-40">
+      <div className="relative z-10 text-center px-4 max-w-4xl flex flex-col items-center translate-y-20 md:translate-y-40">
         {/* Subtle glowing label */}
         {/* <span className="text-xs md:text-sm uppercase tracking-[0.3em] font-bold text-blue-400 mb-6 bg-blue-500/10 px-4 py-1.5 rounded-full border border-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.15)] animate-pulse">
           And I'm Feeling Good
