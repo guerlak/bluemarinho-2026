@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowDown, ArrowRight, MessageCircle } from 'lucide-react';
 import { CONTACT_INFO } from '../lib/constants';
+import fotoHero from '../public/foto-hero-bm.jpg';
 
 const Hero: React.FC = () => {
   const whatsappLink = `https://wa.me/55${CONTACT_INFO.phone.replace(/\D/g, '')}`;
@@ -10,14 +11,14 @@ const Hero: React.FC = () => {
       {/* Background Image with Overlay */}
       <div
         className="absolute inset-0 bg-cover bg-center z-0"
-        style={{ backgroundImage: 'url("./blue-marinho-fest80.jpg")' }}
+        style={{ backgroundImage: `url(${fotoHero.src})` }}
       >
-        <div className="absolute inset-0 bg-blue-marinho/80 mix-blend-multiply"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-blue-marinho via-transparent to-blue-marinho/50"></div>
+        <div className="absolute inset-0 bg-blue-marinho/50 mix-blend-multiply"></div>
+        <div className="absolute inset-0 bg-linear-to-t from-blue-marinho via-transparent to-blue-marinho/10"></div>
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-4xl flex flex-col items-center">
+      <div className="relative z-10 text-center px-4 max-w-4xl flex flex-col items-center translate-y-8 md:translate-y-40">
         {/* Subtle glowing label */}
         {/* <span className="text-xs md:text-sm uppercase tracking-[0.3em] font-bold text-blue-400 mb-6 bg-blue-500/10 px-4 py-1.5 rounded-full border border-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.15)] animate-pulse">
           And I'm Feeling Good
