@@ -80,22 +80,20 @@ const Navbar: React.FC = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className={`relative text-sm uppercase tracking-widest transition-all duration-300 font-sans font-medium py-1 ${
-                  isActive 
-                    ? "text-blue-300 drop-shadow-[0_0_8px_rgba(147,197,253,0.5)] font-semibold" 
-                    : "text-white/80 hover:text-white"
-                }`}
+                className={`relative text-sm uppercase tracking-widest transition-all duration-300 font-sans font-medium py-1 ${isActive
+                  ? "text-blue-300 drop-shadow-[0_0_8px_rgba(147,197,253,0.5)] font-semibold"
+                  : "text-white/80 hover:text-white"
+                  }`}
               >
                 {link.name}
                 <span
-                  className={`absolute -bottom-1 left-0 right-0 h-[2px] bg-blue-300 rounded-full transition-all duration-300 origin-center ${
-                    isActive ? "scale-x-100 opacity-100" : "scale-x-0 opacity-0"
-                  }`}
+                  className={`absolute -bottom-1 left-0 right-0 h-[2px] bg-blue-300 rounded-full transition-all duration-300 origin-center ${isActive ? "scale-x-100 opacity-100" : "scale-x-0 opacity-0"
+                    }`}
                 />
               </a>
             );
           })}
-          <a
+          {/* <a
             href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
@@ -103,7 +101,7 @@ const Navbar: React.FC = () => {
           >
             <MessageCircle size={18} />
             Contrate Agora
-          </a>
+          </a> */}
         </div>
 
         {/* Mobile Toggle */}
@@ -124,18 +122,17 @@ const Navbar: React.FC = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className={`text-center text-lg uppercase tracking-widest py-2.5 transition-all duration-300 rounded ${
-                  isActive
-                    ? "bg-white/10 text-blue-300 font-semibold"
-                    : "text-white/85 hover:bg-white/5"
-                }`}
+                className={`text-center text-lg uppercase tracking-widest py-2.5 transition-all duration-300 rounded ${isActive
+                  ? "bg-white/10 text-blue-300 font-semibold"
+                  : "text-white/85 hover:bg-white/5"
+                  }`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.name}
               </a>
             );
           })}
-          <a
+          {/* <a
             href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
@@ -144,7 +141,7 @@ const Navbar: React.FC = () => {
           >
             <MessageCircle size={20} />
             Contrate Agora
-          </a>
+          </a> */}
         </div>
       )}
     </nav>

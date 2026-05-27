@@ -34,7 +34,7 @@ const About: React.FC = () => {
 
             <div className="space-y-8 text-lg font-light text-gray-300 leading-relaxed">
               <p>
-                A <strong className="text-white font-semibold">Blue Marinho</strong> nasceu da paixão visceral pelo rock & blues, transformando a sinergia de cinco amigos de longa data em uma performance potente, elétrica e carregada de feeling.
+                A <strong className="text-white font-semibold">Blue Marinho</strong> nasceu da paixão visceral pelo rock & blues, transformando a sinergia de cinco amigos de longa data em uma performance potente, elétrica e carregada de sentimento.
               </p>
               <p>
                 Resgatamos os clássicos definitivos que moldaram gerações — do peso do Led Zeppelin ao groove contagiante de Stevie Wonder, da psicodelia dos Mutantes ao blues imortal de Janis Joplin.

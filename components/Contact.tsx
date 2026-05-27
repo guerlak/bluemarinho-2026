@@ -1,10 +1,15 @@
 import React from 'react';
 import { CONTACT_INFO } from '../lib/constants';
 import Image from 'next/image';
-import { Instagram, Youtube, Phone, Globe } from 'lucide-react';
+import { Instagram, Youtube, Phone, Globe, MessageCircle } from 'lucide-react';
 import fotoFooter from '../public/paola-footer.jpg'
 
+
+
 const Contact: React.FC = () => {
+
+    const whatsappLink = `https://wa.me/55${CONTACT_INFO.phone.replace(/\D/g, '')}`;
+
     return (
         <footer id="contact" className="bg-blue-marinho text-white relative overflow-hidden">
             <div className="flex flex-col lg:flex-row">
@@ -27,15 +32,13 @@ const Contact: React.FC = () => {
                     <div className="hidden xl:block absolute right-0 top-1/2 -translate-y-1/2 translate-x-[35%] rotate-90 text-9xl font-black text-white/5 tracking-tighter select-none pointer-events-none">
                         CONTATO
                     </div>
-
                     <div className="relative z-10">
                         <h2 className="text-4xl font-black uppercase mb-12 text-white">
-                            A Blue no seu evento
+                            Fale com a gente
                             <span className="block text-xs md:text-sm text-blue-400 font-bold uppercase tracking-[0.2em] mt-3 font-sans">
-                                Booking & Contato Direto
+                                A Blue Marinho no seu evento
                             </span>
                         </h2>
-
                         <div className="space-y-8 mb-16">
                             <div className="flex items-center gap-4">
                                 <Phone className="w-8 h-8" />
@@ -44,24 +47,27 @@ const Contact: React.FC = () => {
                                     <span className="text-sm text-gray-400">{CONTACT_INFO.contactName}</span>
                                 </div>
                             </div>
-
+                            <a
+                                href={whatsappLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-fit bg-transparent hover:bg-[#25D366]/10 border border-[#25D366]/40 text-[#25D366]/80 px-5 py-2 rounded-full text-sm font-bold uppercase tracking-wider flex items-center gap-2 transition-all transform hover:scale-105 shadow-md hover:shadow-[0_0_15px_rgba(37,211,102,0.15)]"
+                            >
+                                <MessageCircle size={18} />
+                                WhatsApp
+                            </a>
                             <div className="border-t border-white/10 w-full my-6"></div>
-
                             <h3 className="text-xl font-bold mb-4 text-gray-300">Encontre a gente aqui:</h3>
-
                             <a href={`https://instagram.com/${CONTACT_INFO.instagram.replace('@', '')}`} target="_blank" rel="noreferrer" className="flex items-center gap-4 hover:text-blue-400 transition-colors">
                                 <Instagram className="w-8 h-8" />
                                 <span className="text-lg">{CONTACT_INFO.instagram}</span>
                             </a>
-
                             <a href={`https://youtube.com`} target="_blank" rel="noreferrer" className="flex items-center gap-4 hover:text-red-500 transition-colors">
                                 <Youtube className="w-8 h-8" />
                                 <span className="text-lg">{CONTACT_INFO.youtube}</span>
                             </a>
 
-
                         </div>
-
                         <p className="text-xs text-gray-600 mt-auto">
                             © {new Date().getFullYear()} Blue Marinho. Todos os direitos reservados.
                         </p>
