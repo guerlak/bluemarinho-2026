@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-4xl flex flex-col items-center translate-y-20 md:translate-y-40">
+      <div className="relative z-10 text-center px-4 max-w-4xl flex flex-col items-center translate-y-35 md:translate-y-40">
         {/* Subtle glowing label */}
         {/* <span className="text-xs md:text-sm uppercase tracking-[0.3em] font-bold text-blue-400 mb-6 bg-blue-500/10 px-4 py-1.5 rounded-full border border-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.15)] animate-pulse">
           And I'm Feeling Good
