@@ -7,10 +7,10 @@ const Hero: React.FC = () => {
   const whatsappLink = `https://wa.me/55${CONTACT_INFO.phone.replace(/\D/g, '')}`;
 
   return (
-    <section className="relative h-[70vh] md:h-screen sm:h-screen w-full flex items-center justify-center overflow-hidden">
+    <section className="relative sm:mt-10 h-[50vh] md:h-screen sm:h-screen w-full flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div
-        className="absolute inset-0 bg-size-[130%_auto] md:bg-cover bg-center bg-no-repeat z-0 translate-y-0 md:translate-y-0"
+        className="absolute inset-0 bg-size-[130%_auto] md:bg-cover bg-center bg-no-repeat z-0 translate-y-15 sm:translate-y-0 "
         style={{ backgroundImage: `url(${fotoHero.src})` }}
       >
         <div className="absolute inset-0 bg-blue-marinho/50 mix-blend-multiply"></div>
@@ -18,24 +18,25 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-4xl flex flex-col items-center translate-y-35 md:translate-y-40">
+      <div className="relative z-10 text-center px-4 max-w-4xl flex flex-col items-center translate-y-35  w-[400px] md:translate-y-40 sm:w-full" >
         {/* Subtle glowing label */}
         {/* <span className="text-xs md:text-sm uppercase tracking-[0.3em] font-bold text-blue-400 mb-6 bg-blue-500/10 px-4 py-1.5 rounded-full border border-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.15)] animate-pulse">
           And I'm Feeling Good
         </span> */}
 
         {/* Heavy Bold Headline */}
-        <h1 className="text-5xl md:text-8xl font-serif font-bold uppercase tracking-tight leading-none mb-6 text-white drop-shadow-[0_4px_15px_rgba(0,0,0,0.6)]">
+        <h1 className="text-4xl md:text-8xl font-serif font-bold uppercase tracking-tight leading-none mb-6 text-white drop-shadow-[0_4px_15px_rgba(0,0,0,0.6)]">
           O melhor de todas as épocas<br />
-          <span className="text-blue-300 font-sans tracking-wide text-2xl sm:text-3xl md:text-5xl font-black block mt-3 drop-shadow-[0_0_12px_rgba(147,197,253,0.3)]">
+          <span className="text-blue-300 font-sans tracking-wide text-xl sm:text-3xl md:text-5xl font-black block mt-3 drop-shadow-[0_0_12px_rgba(147,197,253,0.3)]">
             Com Alma & Versões Únicas
           </span>
         </h1>
 
         {/* Short Punchy Copy */}
-        <p className="text-base sm:text-lg md:text-xl font-light text-gray-300 leading-relaxed mb-10 max-w-2xl px-2">
+        <p className="hidden sm:block text-base sm:text-lg md:text-xl font-light text-gray-300 leading-relaxed mb-10 max-w-2xl px-2">
           Redefinindo clássicos atemporais de todas as eras com a pegada eletrizante e identidade da Blue Marinho.
         </p>
+
 
         {/* CTA Buttons */}
         {/* <div className="flex flex-col sm:flex-row gap-4 items-center justify-center w-full px-4">
@@ -61,7 +62,7 @@ const Hero: React.FC = () => {
       {/* Decorative Interactive Scroll Indicator */}
       <a
         href="#about"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 cursor-pointer opacity-70 hover:opacity-100 transition-opacity duration-300"
+        className="hidden md:flex absolute bottom-0 left-1/2 -translate-x-1/2 z-10 sm:flex flex-col items-center gap-2 cursor-pointer opacity-70 hover:opacity-100 transition-opacity duration-300"
       >
         <span className="text-[9px] uppercase tracking-[0.3em] font-sans font-bold text-gray-400">Scroll para explorar</span>
         <div className="w-5 h-8 rounded-full border border-white/20 flex justify-center p-1.5">

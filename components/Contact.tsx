@@ -1,7 +1,7 @@
 import React from 'react';
 import { CONTACT_INFO } from '../lib/constants';
 import Image from 'next/image';
-import { Instagram, Youtube, Phone, Globe, MessageCircle } from 'lucide-react';
+import { Instagram, Youtube, Phone, Globe, MessageCircle, Mail } from 'lucide-react';
 import fotoFooter from '../public/paola-footer.jpg'
 
 
@@ -40,21 +40,28 @@ const Contact: React.FC = () => {
                             </span>
                         </h2>
                         <div className="space-y-8 mb-16">
-                            <div className="flex items-center gap-4">
+                            {/* <div className="flex items-center gap-4">
                                 <Phone className="w-8 h-8" />
                                 <div className="flex flex-col">
                                     <span className="text-xl font-medium">{CONTACT_INFO.phone}</span>
                                     <span className="text-sm text-gray-400">{CONTACT_INFO.contactName}</span>
                                 </div>
-                            </div>
+                            </div> */}
                             <a
                                 href={whatsappLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="w-fit bg-transparent hover:bg-[#25D366]/10 border border-[#25D366]/40 text-[#25D366]/80 px-5 py-2 rounded-full text-sm font-bold uppercase tracking-wider flex items-center gap-2 transition-all transform hover:scale-105 shadow-md hover:shadow-[0_0_15px_rgba(37,211,102,0.15)]"
+                                className="w-fit bg-transparent hover:bg-[#25D366]/10 border px-5 py-2 rounded-full text-sm font-bold uppercase tracking-wider flex items-center gap-2 transition-all transform hover:scale-105 shadow-md hover:shadow-[0_0_15px_rgba(37,211,102,0.15)]"
                             >
                                 <MessageCircle size={18} />
                                 WhatsApp
+                            </a>
+                            <a
+                                href={`mailto:bluemarinho.contato@gmail.com`}
+                                className="flex items-center gap-2 hover:text-blue-400 transition-colors"
+                            >
+                                <Mail size={18} />
+                                bluemarinho.contato@gmail.com
                             </a>
                             <div className="border-t border-white/10 w-full my-6"></div>
                             <h3 className="text-xl font-bold mb-4 text-gray-300">Encontre a gente aqui:</h3>

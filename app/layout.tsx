@@ -15,7 +15,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "Blue Marinho",
-  description: "Site oficial da banda Blue Marinho. A Blue Marinho navega por um vasto oceano musical, trazendo o melhor de diferentes épocas e estilos com repertório diversificado e potente.",
+  description: "Site oficial da banda Blue Marinho. A banda para o seu evento. Agenda de shows, eventos, fotos, vídeos e contato.",
 };
 
 export default function RootLayout({
