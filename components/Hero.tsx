@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
   const whatsappLink = `https://wa.me/55${CONTACT_INFO.phone.replace(/\D/g, '')}`;
 
   return (
-    <section className="relative sm:mt-10 h-[50vh] md:h-screen sm:h-screen w-full flex items-center justify-center overflow-hidden">
+    <section className="relative sm:mt-10 h-[60vh] md:h-screen sm:h-screen w-full flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div
         className="absolute inset-0 bg-size-[130%_auto] md:bg-cover bg-center bg-no-repeat z-0 translate-y-15 sm:translate-y-0 "
@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-4xl flex flex-col items-center translate-y-35  w-[400px] md:translate-y-40 sm:w-full" >
+      <div className="relative z-10 text-center px-4 max-w-4xl flex flex-col items-center translate-y-40  w-[400px] md:translate-y-40 sm:w-full" >
         {/* Subtle glowing label */}
         {/* <span className="text-xs md:text-sm uppercase tracking-[0.3em] font-bold text-blue-400 mb-6 bg-blue-500/10 px-4 py-1.5 rounded-full border border-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.15)] animate-pulse">
           And I'm Feeling Good
@@ -59,15 +59,11 @@ const Hero: React.FC = () => {
         </div> */}
       </div>
 
-      {/* Decorative Interactive Scroll Indicator */}
       <a
         href="#about"
-        className="hidden md:flex absolute bottom-0 left-1/2 -translate-x-1/2 z-10 sm:flex flex-col items-center gap-2 cursor-pointer opacity-70 hover:opacity-100 transition-opacity duration-300"
+        className="absolute bottom-4 sm:bottom-40 left-1/2 -translate-x-1/2 z-10 flex items-center justify-center cursor-pointer opacity-75 hover:opacity-100 transition-opacity duration-300"
       >
-        <span className="text-[9px] uppercase tracking-[0.3em] font-sans font-bold text-gray-400">Scroll para explorar</span>
-        <div className="w-5 h-8 rounded-full border border-white/20 flex justify-center p-1.5">
-          <div className="w-1 h-2 bg-blue-300 rounded-full animate-bounce" />
-        </div>
+        <ArrowDown className="w-5 h- text-blue-300 animate-bounce" />
       </a>
     </section>
   );
