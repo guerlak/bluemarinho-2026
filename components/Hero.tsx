@@ -1,13 +1,13 @@
 import React from 'react';
 import { ArrowDown, ArrowRight, MessageCircle } from 'lucide-react';
 import { CONTACT_INFO } from '../lib/constants';
-import fotoHero from '../public/foto-hero-bm.jpg';
+import fotoHero from '../public/hero-bm.jpg';
 
 const Hero: React.FC = () => {
   const whatsappLink = `https://wa.me/55${CONTACT_INFO.phone.replace(/\D/g, '')}`;
 
   return (
-    <section className="relative sm:mt-10 h-[60vh] md:h-screen sm:h-screen w-full flex items-center justify-center overflow-hidden">
+    <section className="relative sm:mt-10 h-[60vh] md:h-screen sm:h-screen w-full flex items-end justify-center pb-12 sm:pb-28 md:pb-36 overflow-hidden">
       {/* Background Image with Overlay */}
       <div
         className="absolute inset-0 bg-size-[130%_auto] md:bg-cover bg-center bg-no-repeat z-0 translate-y-15 sm:translate-y-0 "
@@ -18,22 +18,22 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-4xl flex flex-col items-center translate-y-40  w-[400px] md:translate-y-40 sm:w-full" >
+      <div className="relative z-10 text-center px-4 max-w-4xl flex flex-col items-center w-full" >
         {/* Subtle glowing label */}
         {/* <span className="text-xs md:text-sm uppercase tracking-[0.3em] font-bold text-blue-400 mb-6 bg-blue-500/10 px-4 py-1.5 rounded-full border border-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.15)] animate-pulse">
           And I'm Feeling Good
         </span> */}
 
         {/* Heavy Bold Headline */}
-        <h1 className="text-4xl md:text-8xl font-serif font-bold uppercase tracking-tight leading-none mb-6 text-white drop-shadow-[0_4px_15px_rgba(0,0,0,0.6)]">
+        <h1 className="text-3xl sm:text-5xl md:text-8xl font-serif font-bold uppercase tracking-tight leading-none mb-4 sm:mb-6 text-white drop-shadow-[0_4px_15px_rgba(0,0,0,0.6)]">
           O melhor de todas as épocas<br />
-          <span className="text-blue-300 font-sans tracking-wide text-xl sm:text-3xl md:text-5xl font-black block mt-3 drop-shadow-[0_0_12px_rgba(147,197,253,0.3)]">
+          <span className="text-blue-300 font-sans tracking-wide text-lg sm:text-3xl md:text-5xl font-black block mt-2 sm:mt-3 drop-shadow-[0_0_12px_rgba(147,197,253,0.3)]">
             Com Alma & Versões Únicas
           </span>
         </h1>
 
         {/* Short Punchy Copy */}
-        <p className="hidden sm:block text-base sm:text-lg md:text-xl font-light text-gray-300 leading-relaxed mb-10 max-w-2xl px-2">
+        <p className="text-sm sm:text-lg md:text-xl font-light text-gray-300 leading-relaxed mb-6 sm:mb-10 max-w-2xl px-2">
           Redefinindo clássicos atemporais de todas as eras com a pegada eletrizante e identidade da Blue Marinho.
         </p>
 
@@ -61,9 +61,9 @@ const Hero: React.FC = () => {
 
       <a
         href="#about"
-        className="absolute bottom-4 sm:bottom-40 left-1/2 -translate-x-1/2 z-10 flex items-center justify-center cursor-pointer opacity-75 hover:opacity-100 transition-opacity duration-300"
+        className="absolute bottom-2 sm:bottom-18 left-1/2 -translate-x-1/2 z-10 flex items-center justify-center cursor-pointer opacity-75 hover:opacity-100 transition-opacity duration-300"
       >
-        <ArrowDown className="w-5 h- text-blue-300 animate-bounce" />
+        <ArrowDown className="w-5 h-5 text-blue-300 animate-bounce" />
       </a>
     </section>
   );
