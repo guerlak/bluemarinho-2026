@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import picture from "../public/foto-instrumento.png"
+import picture from "../public/foto-bm-01.jpg"
 
 const About: React.FC = () => {
   return (
@@ -14,7 +14,7 @@ const About: React.FC = () => {
               fill
               src={picture}
               alt="Blue Marinho Band Performance"
-              className="absolute inset-0 w-full h-full object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-700"
+              className="absolute inset-0 w-full h-full object-cover opacity-60  transition-all duration-700 "
             />
             <div className="absolute top-8 left-8 z-10">
               <h2 className="text-4xl md:text-6xl font-serif font-bold uppercase leading-none">
