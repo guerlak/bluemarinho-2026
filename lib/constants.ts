@@ -36,13 +36,13 @@ export const VIDEO_LINKS: VideoLink[] = [
 ];
 
 export const PRESENTATIONS: Presentation[] = [
-  { day: "28", month: "MAI", year: "2026", venue: "EVENTO PRIVADO", location: "Ilha do Governador, RJ", time: "18:00" },
-  { day: "30", month: "MAI", year: "2026", venue: "REMEMBEER", location: "Barra da Tijuca, RJ", time: "21:30" },
-  { day: "06", month: "JUN", year: "2026", venue: "TRIP DO VINHO", location: "Vargem Grande, RJ", time: "21:00" },
-  { day: "20", month: "JUN", year: "2026", venue: "LEGION BIKERS", location: "Vargem Pequena, RJ", time: "19:00" },
-  { day: "27", month: "JUN", year: "2026", venue: "MACACO CAOLHO", location: "Botafogo, RJ", time: "21:30" },
-  { day: "11", month: "JUL", year: "2026", venue: "BROOKS PUB", location: "Méier, RJ", time: "21:00" },
-
+  { day: "11", month: "JUL", year: "2026", venue: "BROOKS PUB", location: "Méier, RJ", time: "21:00" , socialLink: "https://www.instagram.com/brookspubrj"},
+  { day: "25", month: "JUL", year: "2026", venue: "TRIP DO VINHO", location: "Vargem Grande, RJ", time: "21:00", socialLink: "https://www.instagram.com/tripdovinho" },
+  { day: "01", month: "AGO", year: "2026", venue: "BULLDOG ROCK BAR", location: "Pechincha, RJ", time: "21:00", socialLink: "https://www.instagram.com/bulldogrockbar" },
+  { day: "29", month: "AGO", year: "2026", venue: "TRIP DO VINHO", location: "Vargem Grande, RJ", time: "21:00", socialLink: "https://www.instagram.com/tripdovinho" },
+  { day: "03", month: "OUT", year: "2026", venue: "MACACO CAOLHO", location: "Botafogo, RJ", time: "21:30", socialLink: "https://www.instagram.com/macacocaolhopub" },
+  { day: "17", month: "OUT", year: "2026", venue: "ZIEGE ZAG", location: "Vargem Pequena, RJ", time: "17:00", socialLink: "https://www.instagram.com/ziegezag" },
+  //{ day: "21", month: "NOV", year: "2026", venue: "ZIEGE ZAG", location: "Vargem Pequena, RJ", time: "17:00", socialLink: "https://www.instagram.com/ziegezag" },
 ];
 
 export const CONTACT_INFO = {

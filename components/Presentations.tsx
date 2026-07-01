@@ -1,6 +1,6 @@
 import React from 'react';
 import { Presentation } from '../lib/types';
-import { MapPin, Clock } from 'lucide-react';
+import { MapPin, Clock, Instagram } from 'lucide-react';
 import Image from 'next/image';
 import fotoShow from "../public/blue-marinho-fest80.jpg"
 
@@ -42,8 +42,19 @@ const Presentations: React.FC<PresentationsProps> = ({ schedule }) => {
 
               {/* Info */}
               <div className="flex flex-col justify-center flex-grow">
-                <h3 className="text-lg md:text-xl font-bold uppercase tracking-wide text-gray-100 mb-2 group-hover:text-white transition-colors duration-300">
+                <h3 className="text-lg md:text-xl font-bold uppercase tracking-wide text-gray-100 mb-2 group-hover:text-white transition-colors duration-300 flex items-center gap-2">
                   {gig.venue}
+                  {gig.socialLink && (
+                    <a
+                      href={gig.socialLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-400 hover:text-blue-300 transition-colors p-1"
+                      aria-label={`Instagram do(a) ${gig.venue}`}
+                    >
+                      <Instagram size={18} />
+                    </a>
+                  )}
                 </h3>
                 <div className="flex flex-wrap gap-4 text-sm text-gray-400 font-medium">
                   <div className="flex items-center gap-1 transition-colors duration-300 group-hover:text-gray-300">
@@ -76,7 +87,7 @@ const Presentations: React.FC<PresentationsProps> = ({ schedule }) => {
 
         <div className="absolute bottom-12 left-12 z-30 max-w-md transform transition-transform duration-500 group-hover/image:translate-x-1">
           <p className="text-white/90 text-lg italic font-light border-l-2 border-blue-500 pl-4 drop-shadow-md">
-            "A marca registrada da banda são suas versões carregadas de energia e personalidade."
+            Blue Marinho<br></br> Urca, Rio de Janeiro - Brasil
           </p>
         </div>
       </div>

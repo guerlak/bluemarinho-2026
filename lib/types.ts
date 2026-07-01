@@ -23,4 +23,5 @@ export interface Presentation {
   venue: string;
   location: string;
   time: string;
+  socialLink: string;
 }
