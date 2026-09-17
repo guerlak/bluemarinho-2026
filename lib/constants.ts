@@ -4,7 +4,6 @@ export const BAND_MEMBERS: Member[] = [
   { name: "PAOLA MARINHO", role: "Voz", image: "./members/paola.jpg" },
   { name: "FELIPE CAMPOS", role: "Guitarra e Voz", image: "./members/pinous.jpg" },
   { name: "FÁBIO TAVARES", role: "Guitarra", image: "./members/fabio.jpg" },
-  { name: "RAPHAEL PIQUET", role: "Baixo", image: "./members/piquet.jpg" },
   { name: "RAFAEL GUERLAK", role: "Bateria", image: "./members/guerlak.jpg" },
 ];
 

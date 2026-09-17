@@ -15,7 +15,7 @@ const Members: React.FC = () => {
           </span>
         </h2>
 
-        <div className="flex overflow-x-auto pb-8 gap-8 px-4 -mx-4 snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] sm:grid sm:grid-cols-2 sm:overflow-x-visible sm:pb-0 sm:px-0 sm:mx-0 lg:grid-cols-5 lg:gap-12 lg:justify-items-center">
+        <div className="flex overflow-x-auto pb-8 gap-8 px-4 -mx-4 snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] sm:grid sm:grid-cols-2 sm:overflow-x-visible sm:pb-0 sm:px-0 sm:mx-0 lg:grid-cols-4 lg:gap-12 lg:justify-items-center">
           {BAND_MEMBERS.map((member) => (
             <div key={member.name} className="flex flex-col items-center group shrink-0 snap-center w-[280px] sm:w-auto">
               {/* Circle Image container with rough white border effect */}
