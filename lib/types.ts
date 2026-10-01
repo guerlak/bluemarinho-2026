@@ -16,12 +16,22 @@ export interface VideoLink {
   url: string;
 }
 
+export interface Venue {
+  id: number;
+  name: string;
+  location: string;
+  socialLink?: string;
+}
+
 export interface Presentation {
+  id?: number;
+  venue_id?: number;
   day: string;
   month: string;
   year: string;
+  time: string;
+  // Campos vindos do JOIN com a tabela venues:
   venue: string;
   location: string;
-  time: string;
   socialLink: string;
 }
