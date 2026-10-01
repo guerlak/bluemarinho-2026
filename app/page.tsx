@@ -6,7 +6,7 @@ import Members from "@/components/Members";
 import Navbar from "@/components/Navbar";
 import Presentations from "@/components/Presentations";
 import Repertoire from "@/components/Repertoire";
-import { getPresentations } from "@/actions/get-presentations";
+import { getPresentations } from "../actions/presentation-actions";
 
 
 export default async function Home() {
@@ -24,4 +24,4 @@ export default async function Home() {
       <Contact />
     </main>
   );
-}
+} 

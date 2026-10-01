@@ -1,4 +1,4 @@
-import { getPresentations } from '@/actions/get-presentations';
+import { getPresentations } from "@/actions/presentation-actions";
 import { getVenues } from '@/actions/venue-actions';
 import { logoutAction } from '@/actions/auth-actions';
 import { deletePresentationAction } from '@/actions/presentation-actions';
