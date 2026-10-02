@@ -5,6 +5,7 @@ import { deletePresentationAction } from '@/actions/presentation-actions';
 import AdminPresentationForm from './presentation-form';
 import AdminVenueForm from './venue-form';
 import Link from 'next/link';
+import { Building2, ExternalLink, Instagram, MapPin } from "lucide-react";
 
 export const dynamic = 'force-dynamic';
 
@@ -56,6 +57,60 @@ export default async function AdminDashboardPage() {
 					</p>
 					<AdminVenueForm />
 				</section>
+
+
+				{/* Mini Cards: Casas de Show Cadastradas */}
+				<section className="space-y-4">
+					<div className="flex items-center justify-between">
+						<div className="flex items-center gap-2">
+							<Building2 size={20} className="text-blue-500" />
+							<h2 className="text-xl font-bold text-neutral-200">
+								Casas de Show Cadastradas ({venues.length})
+							</h2>
+						</div>
+					</div>
+
+					{venues.length === 0 ? (
+						<p className="text-xs text-neutral-500 italic">
+							Nenhuma casa cadastrada ainda. Use o formulário acima para adicionar a primeira.
+						</p>
+					) : (
+						<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+							{venues.map((venue) => (
+								<div
+									key={venue.id}
+									className="group relative flex flex-col justify-between rounded-xl border border-neutral-800 bg-neutral-900/60 p-4 transition-all duration-200 hover:border-neutral-700 hover:bg-neutral-900/90 shadow-sm"
+								>
+									{/* Nome e Badge */}
+									<div className="space-y-1.5">
+										<div className="flex items-start justify-between gap-2">
+											<h3 className="font-bold text-sm tracking-wide text-white group-hover:text-blue-400 transition-colors uppercase">
+												{venue.name}
+											</h3>
+											<span className="shrink-0 text-[10px] font-mono text-neutral-500 bg-neutral-950 px-1.5 py-0.5 rounded border border-neutral-800/80">
+												#{venue.id}
+											</span>
+										</div>
+
+										{/* Localização com ícone */}
+										<div className="flex items-center gap-1.5 text-xs text-neutral-400">
+											<MapPin size={13} className="text-blue-500 shrink-0" />
+											<span className="truncate">{venue.location}</span>
+										</div>
+									</div>
+
+								</div>
+							))}
+						</div>
+					)}
+				</section>
+
+				<div className="relative py-4">
+					<div className="h-px w-full bg-gradient-to-r from-transparent via-neutral-700 to-transparent" />
+				</div>
+
+
+
 
 
 				<section className="rounded-2xl border border-neutral-800 bg-neutral-900/60 p-6 md:p-8 backdrop-blur-sm space-y-4">

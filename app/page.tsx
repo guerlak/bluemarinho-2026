@@ -8,6 +8,9 @@ import Presentations from "@/components/Presentations";
 import Repertoire from "@/components/Repertoire";
 import { getPresentations } from "../actions/presentation-actions";
 
+// 👇 Adicione esta linha: Força o Next.js a buscar os shows do banco em tempo real
+export const dynamic = 'force-dynamic';
+
 
 export default async function Home() {
   const presentationSchedule = await getPresentations();
